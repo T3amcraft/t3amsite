@@ -3,12 +3,17 @@
 
 <head>
     <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="T3amcraft" />
+    <meta property="og:description" content="This is T3amcrafts website, come check it out." />
+    <meta property="og:url" content="http://t3amcraft.xyz/" />
+    <meta property="og:image" content="/static/Logo.jpg" />
     <div class="title">
         <title>{% block title %}{% endblock %}</title>
     </div>
     {% block css %} {% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <meta charset="UTF-8">
 </head>
 
 <body>
