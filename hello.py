@@ -10,9 +10,9 @@ def home(name=None):
 def about(name=None):
     return render_template('about.html', name=name)
 
-@app.route('/free')
-def free(name=None):
-    return render_template('free.html', name=name)
+@app.route('/content')
+def content(name=None):
+    return render_template('content.html', name=name)
 
 @app.route('/test2')
 def test2(name=None):

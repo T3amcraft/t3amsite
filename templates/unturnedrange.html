@@ -1,7 +1,13 @@
 {% extends "layout.html" %} {% block title %}T3amcraft | UnturnedRange{% endblock %} {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/unturnedrange.css') }}">{% endblock %} {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/unturnedrange.css') }}">{% endblock %} {% block meta %}
+<meta charset="UTF-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T3amcraft | UnturnedRange" />
+<meta property="og:description" content="This is a tool to see the range of AreaChat, VoiceChat and GunShots in Unturned." />
+<meta property="og:url" content="http://t3amcraft.xyz/unturned/range" />
+<meta property="og:image" content="/static/LogoSite.jpg" />{% endblock %} {% block content %}
 <div class="unturnedrange">
-    <h1 align=center class="title">Unturned Area and Voice Chat Range</h1>
+    <h1 align=center class="title">Unturned Area Chat, Voice Chat and GunShots Range</h1>
     <div id="textbox">
         <h4 class="alignleft">
             <div class="map-with-text">

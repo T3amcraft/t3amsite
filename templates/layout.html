@@ -2,13 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="T3amcraft" />
-    <meta property="og:description" content="This is T3amcrafts website, come check it out." />
-    <meta property="og:url" content="http://t3amcraft.xyz/" />
-    <meta property="og:image" content="/static/LogoSite.jpg" />
+    <link rel="icon" href="../static/favicon.ico" type="image/x-icon"> {% block meta %} {% endblock %}
     <div class="title">
         <title>{% block title %}{% endblock %}</title>
     </div>
@@ -24,7 +18,7 @@
               <nav>
                 <ul class="menu">
                   <li><a href="{{ url_for('home') }}">Home</a></li>
-                  <li><a href="{{ url_for('free') }}">Free</a></li>
+                  <li><a href="{{ url_for('content') }}">Content</a></li>
                   <li><a href="{{ url_for('about') }}">About</a></li>
                   <li><a href="{{ url_for('pictures') }}">Pictures</a></li>
                   <li><a href="{{ url_for('unturned') }}">Unturned</a></li>
