@@ -129,6 +129,14 @@ function mapWashingtonCounty() {
     return false;
 }
 
+function mapUralMountainsLN() {
+    var img = document.getElementById("map");
+    img.src = "https://s3.eu-west-2.amazonaws.com/t3amcraft.public/unturnedmaps/unturnedLargeUralMountainsLN.png";
+    mapSize = 4;
+    areaChat()
+    return false;
+}
+
 function mapCheck(el) {
     if (mapSize == 1) {
         document.getElementById("box").style.background = ("#FF0000");
